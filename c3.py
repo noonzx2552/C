@@ -1,9 +1,12 @@
+import math
 tree = int(input("highttree:"))
 season = int(input("season:"))
+loop = math.floor(season/2)
+sas = season % 2 
+total = 0
 
-for i in range(5):
-    tree += 2 * season
-
-    tree += 1
-
-print(tree) 
+if sas == 1:
+    total += 1
+else:
+    total += 0
+print(total)

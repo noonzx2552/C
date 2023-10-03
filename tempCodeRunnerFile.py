@@ -1,7 +1,15 @@
-r = int(input("radius:"))
-rpm = int(input("RPM:"))
+import math
+tree = int(input("highttree:"))
+season = int(input("season:"))
+loop = math.floor(season/2)
+sas = season % 2 
+total = 0
+for i in range(loop):
+    total += 1
+    total += 2 * season  
 
-r_inch = 2*r*22/ 7 
-for i in range(rpm):
-
-print(r_inch)
+if sas == 1:
+    total += 1
+else:
+    total += 0
+print(total)
