@@ -1,15 +1,11 @@
 import math
-x = int(input("ความยาวรอบรูป:"))
-bm = 0
-sm = 0
-undoor = x-2
-a = undoor/3
-loop =math.ceil(a)
-for i in range(loop):
-    bm += 2
-    sm += 3
+views = int(input("view: "))
+days = int(input("days:"))
 
-print(f"bm:{bm}")
-print(f"sm:{sm}")
-#if80 loop26 
-#if100 loop33
+for day in range(days + 1):
+    likes_and_shares = math.ceil(views/2)
+    friends_shared = likes_and_shares * 3
+    
+    print(f"วันที่ {day}: share {likes_and_shares} / view {friends_shared}")
+    
+    views += friends_shared
