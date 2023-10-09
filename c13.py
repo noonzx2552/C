@@ -19,4 +19,4 @@ while True:
     elif user == "low":
         low = bot + 1
     else:
-        print("tryagain![high/low/correct]")
+        print("tryagain![high/low/correct]")    
