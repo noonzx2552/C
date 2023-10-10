@@ -1,5 +1,4 @@
 import random
-ans = int(input("type : "))
 round = 0
 if 1000 <= ans < 1000000:
     while True:
