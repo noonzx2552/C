@@ -14,4 +14,4 @@ elif room == "dulux":
 else:
     print("error")
 
-print("คุณต้องจ่ายทั้งหมด")    
+print(f"คุณต้องจ่ายทั้งหมด {total} บาท")    
